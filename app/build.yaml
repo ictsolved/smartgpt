@@ -1,0 +1,12 @@
+global_options:
+  freezed:freezed:
+    runs_before:
+      - isar_generator:isar_generator
+
+targets:
+  $default:
+    builders:
+      envied_generator|envied:
+        options:
+          path: .env
+          override: true
